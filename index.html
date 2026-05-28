@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+      overflow: hidden;
+      font-family: Georgia, serif;
+    }
+
+    .banner {
+      width: 100vw;
+      height: 120px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #111827, #1f2937, #111827);
+      border-radius: 18px;
+    }
+
+    .track {
+      display: flex;
+      gap: 42px;
+      animation: scroll 18s linear infinite;
+      white-space: nowrap;
+      font-size: 42px;
+    }
+
+    .item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      opacity: 0.95;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="track">
+      <span class="item">🥐 Bonjour</span>
+      <span class="item">🗼 Paris</span>
+      <span class="item">☕ Café</span>
+      <span class="item">🥖 Baguette</span>
+      <span class="item">🇫🇷 Français</span>
+      <span class="item">🧀 Fromage</span>
+
+      <span class="item">🥐 Bonjour</span>
+      <span class="item">🗼 Paris</span>
+      <span class="item">☕ Café</span>
+      <span class="item">🥖 Baguette</span>
+      <span class="item">🇫🇷 Français</span>
+      <span class="item">🧀 Fromage</span>
+    </div>
+  </div>
+</body>
+</html>
