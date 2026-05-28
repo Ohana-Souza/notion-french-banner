@@ -1,91 +1,40 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90px;
+    background: #191919;
+    overflow: hidden;
+  }
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: transparent;
-      overflow: hidden;
-      font-family: Georgia, serif;
-    }
+  .banner {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #191919;
+  }
 
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .track {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    width: max-content;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+  }
 
-    .banner {
-      width: 100%;
-      height: 90px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      background: transparent;
-    }
+  .item {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+  }
 
-    .track {
-      display: flex;
-      align-items: center;
-      gap: 56px;
-      width: max-content;
-      white-space: nowrap;
-
-      animation: scroll 20s linear infinite;
-    }
-
-    .item {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-
-      color: rgba(255,255,255,0.95);
-
-      font-size: 42px;
-      font-weight: 600;
-
-      user-select: none;
-
-      text-shadow:
-        0 0 8px rgba(255,255,255,0.08),
-        0 0 20px rgba(255,255,255,0.04);
-    }
-
-    @keyframes scroll {
-      from {
-        transform: translateX(0);
-      }
-
-      to {
-        transform: translateX(-50%);
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="banner">
-    <div class="track">
-
-      <span class="item">🥐 Bonjour</span>
-      <span class="item">🗼 Paris</span>
-      <span class="item">☕ Café</span>
-      <span class="item">🥖 Baguette</span>
-      <span class="item">🇫🇷 Français</span>
-      <span class="item">🧀 Fromage</span>
-
-      <span class="item">🥐 Bonjour</span>
-      <span class="item">🗼 Paris</span>
-      <span class="item">☕ Café</span>
-      <span class="item">🥖 Baguette</span>
-      <span class="item">🇫🇷 Français</span>
-      <span class="item">🧀 Fromage</span>
-
-    </div>
-  </div>
-</body>
-</html>
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+</style>
